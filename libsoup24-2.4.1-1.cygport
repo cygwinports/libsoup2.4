@@ -1,0 +1,18 @@
+APACHE_MAJOR=2
+ORIG_PN=libsoup
+
+inherit gnome2 apache
+
+DESCRIPTION="GNOME HTTP client/server library"
+
+abi=1
+PKG_NAMES="${PN} ${PN}-devel"
+PKG_HINTS="setup devel"
+PKG_CONTENTS[0]="usr/bin/cygsoup-${PV_MAJ_MIN}-${abi}.dll usr/share/doc/"
+PKG_CONTENTS[1]='usr/include/ usr/lib/ usr/share/gtk-doc/'
+
+CYGCONF_ARGS="
+	--enable-ssl
+	--with-apache-httpd=${HTTPD}
+	--with-apache-module-dir=${APXS_LIBEXECDIR}
+"
