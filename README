@@ -13,9 +13,9 @@ operation mode is also supported for those who want it).
 Runtime requirements:
   cygwin-1.5.25-15
   libgcrypt11-1.4.1-1
-  libglib2.0_0-2.18.3-1
+  libglib2.0_0-2.18.4-1
   libgnutls26-2.4.1-1
-  libxml2-2.7.2-1
+  libxml2-2.7.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -41,16 +41,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libsoup2.4-2.24.2.1-X-src.tar.bz2
+  unpack libsoup2.4-2.24.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libsoup2.4-2.24.2.1-X.cygport all
+  cygport ./libsoup2.4-2.24.3-X.cygport all
 
 This will create:
-  /usr/src/libsoup2.4-2.24.2.1-X-src.tar.bz2
-  /usr/src/libsoup2.4-devel-2.24.2.1-X.tar.bz2
-  /usr/src/libsoup2.4_1-2.24.2.1-X.tar.bz2
+  /usr/src/libsoup2.4-2.24.3-X-src.tar.bz2
+  /usr/src/libsoup2.4-devel-2.24.3-X.tar.bz2
+  /usr/src/libsoup2.4_1-2.24.3-X.tar.bz2
 
 -------------------------------------------
 
@@ -58,12 +58,12 @@ Files included in the binary packages:
 
 (libsoup2.4_1)
   /usr/bin/cygsoup-2.4-1.dll
-  /usr/share/doc/libsoup2.4-2.24.2.1/AUTHORS
-  /usr/share/doc/libsoup2.4-2.24.2.1/COPYING
-  /usr/share/doc/libsoup2.4-2.24.2.1/ChangeLog
-  /usr/share/doc/libsoup2.4-2.24.2.1/INSTALL
-  /usr/share/doc/libsoup2.4-2.24.2.1/NEWS
-  /usr/share/doc/libsoup2.4-2.24.2.1/README
+  /usr/share/doc/libsoup2.4-2.24.3/AUTHORS
+  /usr/share/doc/libsoup2.4-2.24.3/COPYING
+  /usr/share/doc/libsoup2.4-2.24.3/ChangeLog
+  /usr/share/doc/libsoup2.4-2.24.3/INSTALL
+  /usr/share/doc/libsoup2.4-2.24.3/NEWS
+  /usr/share/doc/libsoup2.4-2.24.3/README
 
 (libsoup2.4-devel)
   /usr/include/libsoup-2.4/libsoup/soup-address.h
@@ -140,6 +140,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 2.24.3-1 -----
+Version bump.
 
 ----- version 2.24.2.1-1 -----
 Version bump for GNOME 2.24.
