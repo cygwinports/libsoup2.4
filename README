@@ -11,24 +11,28 @@ fashion, very similar to the Gtk+ programming model (a synchronous
 operation mode is also supported for those who want it).
 
 Runtime requirements:
-  cygwin-1.5.25-15
+  cygwin-1.7.0-44
+  libgcc1-4.3.2-2
+  libgconf2_4-2.26.0-1
   libgcrypt11-1.4.1-1
-  libglib2.0_0-2.18.4-1
+  libglib2.0_0-2.20.0-1
   libgnutls26-2.4.1-1
-  libxml2-2.7.3-1
+  libproxy0-0.2.3-1
+  libsqlite3_0-3.6.11-1
+  libxml2-2.7.3-10
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gnome-common-2.24.0-1
-  gtk-doc-1.11-1
-  libtool-2.2.6a-1
-  make-3.81-1
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gnome-common-2.26.0-1
+  gtk-doc-1.11-2
+  libtool-2.2.7a-11
+  make-3.81-2
   pkg-config-0.23a-2
   sed-4.1.5-2
 
@@ -41,16 +45,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libsoup2.4-2.24.3-X-src.tar.bz2
+  unpack libsoup2.4-2.26.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libsoup2.4-2.24.3-X.cygport all
+  cygport ./libsoup2.4-2.26.0-X.cygport all
 
 This will create:
-  /usr/src/libsoup2.4-2.24.3-X-src.tar.bz2
-  /usr/src/libsoup2.4-devel-2.24.3-X.tar.bz2
-  /usr/src/libsoup2.4_1-2.24.3-X.tar.bz2
+  /usr/src/libsoup2.4-2.26.0-X-src.tar.bz2
+  /usr/src/libsoup2.4-devel-2.26.0-X.tar.bz2
+  /usr/src/libsoup2.4_1-2.26.0-X.tar.bz2
 
 -------------------------------------------
 
@@ -58,12 +62,12 @@ Files included in the binary packages:
 
 (libsoup2.4_1)
   /usr/bin/cygsoup-2.4-1.dll
-  /usr/share/doc/libsoup2.4-2.24.3/AUTHORS
-  /usr/share/doc/libsoup2.4-2.24.3/COPYING
-  /usr/share/doc/libsoup2.4-2.24.3/ChangeLog
-  /usr/share/doc/libsoup2.4-2.24.3/INSTALL
-  /usr/share/doc/libsoup2.4-2.24.3/NEWS
-  /usr/share/doc/libsoup2.4-2.24.3/README
+  /usr/bin/cygsoup-gnome-2.4-1.dll
+  /usr/share/doc/libsoup2.4/AUTHORS
+  /usr/share/doc/libsoup2.4/COPYING
+  /usr/share/doc/libsoup2.4/ChangeLog
+  /usr/share/doc/libsoup2.4/NEWS
+  /usr/share/doc/libsoup2.4/README
 
 (libsoup2.4-devel)
   /usr/include/libsoup-2.4/libsoup/soup-address.h
@@ -71,6 +75,7 @@ Files included in the binary packages:
   /usr/include/libsoup-2.4/libsoup/soup-auth-domain-digest.h
   /usr/include/libsoup-2.4/libsoup/soup-auth-domain.h
   /usr/include/libsoup-2.4/libsoup/soup-auth.h
+  /usr/include/libsoup-2.4/libsoup/soup-cookie-jar-text.h
   /usr/include/libsoup-2.4/libsoup/soup-cookie-jar.h
   /usr/include/libsoup-2.4/libsoup/soup-cookie.h
   /usr/include/libsoup-2.4/libsoup/soup-date.h
@@ -83,7 +88,9 @@ Files included in the binary packages:
   /usr/include/libsoup-2.4/libsoup/soup-message.h
   /usr/include/libsoup-2.4/libsoup/soup-method.h
   /usr/include/libsoup-2.4/libsoup/soup-misc.h
+  /usr/include/libsoup-2.4/libsoup/soup-multipart.h
   /usr/include/libsoup-2.4/libsoup/soup-portability.h
+  /usr/include/libsoup-2.4/libsoup/soup-proxy-resolver.h
   /usr/include/libsoup-2.4/libsoup/soup-server.h
   /usr/include/libsoup-2.4/libsoup/soup-session-async.h
   /usr/include/libsoup-2.4/libsoup/soup-session-feature.h
@@ -96,24 +103,37 @@ Files included in the binary packages:
   /usr/include/libsoup-2.4/libsoup/soup-value-utils.h
   /usr/include/libsoup-2.4/libsoup/soup-xmlrpc.h
   /usr/include/libsoup-2.4/libsoup/soup.h
+  /usr/include/libsoup-gnome-2.4/libsoup/soup-cookie-jar-sqlite.h
+  /usr/include/libsoup-gnome-2.4/libsoup/soup-gnome-features.h
+  /usr/include/libsoup-gnome-2.4/libsoup/soup-gnome.h
   /usr/lib/libsoup-2.4.dll.a
   /usr/lib/libsoup-2.4.la
+  /usr/lib/libsoup-gnome-2.4.dll.a
+  /usr/lib/libsoup-gnome-2.4.la
   /usr/lib/pkgconfig/libsoup-2.4.pc
+  /usr/lib/pkgconfig/libsoup-gnome-2.4.pc
   /usr/share/gtk-doc/html/libsoup-2.4/SoupAddress.html
   /usr/share/gtk-doc/html/libsoup-2.4/SoupAuth.html
   /usr/share/gtk-doc/html/libsoup-2.4/SoupAuthDomain.html
   /usr/share/gtk-doc/html/libsoup-2.4/SoupAuthDomainBasic.html
   /usr/share/gtk-doc/html/libsoup-2.4/SoupAuthDomainDigest.html
   /usr/share/gtk-doc/html/libsoup-2.4/SoupCookieJar.html
+  /usr/share/gtk-doc/html/libsoup-2.4/SoupCookieJarSqlite.html
+  /usr/share/gtk-doc/html/libsoup-2.4/SoupCookieJarText.html
   /usr/share/gtk-doc/html/libsoup-2.4/SoupLogger.html
   /usr/share/gtk-doc/html/libsoup-2.4/SoupMessage.html
+  /usr/share/gtk-doc/html/libsoup-2.4/SoupProxyResolver.html
   /usr/share/gtk-doc/html/libsoup-2.4/SoupServer.html
   /usr/share/gtk-doc/html/libsoup-2.4/SoupSession.html
   /usr/share/gtk-doc/html/libsoup-2.4/SoupSessionAsync.html
+  /usr/share/gtk-doc/html/libsoup-2.4/SoupSessionFeature.html
   /usr/share/gtk-doc/html/libsoup-2.4/SoupSessionSync.html
   /usr/share/gtk-doc/html/libsoup-2.4/SoupSocket.html
   /usr/share/gtk-doc/html/libsoup-2.4/ch01.html
   /usr/share/gtk-doc/html/libsoup-2.4/ch02.html
+  /usr/share/gtk-doc/html/libsoup-2.4/ch03.html
+  /usr/share/gtk-doc/html/libsoup-2.4/ch04.html
+  /usr/share/gtk-doc/html/libsoup-2.4/ch05.html
   /usr/share/gtk-doc/html/libsoup-2.4/home.png
   /usr/share/gtk-doc/html/libsoup-2.4/index.html
   /usr/share/gtk-doc/html/libsoup-2.4/index.sgml
@@ -122,14 +142,18 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/libsoup-2.4/libsoup-2.4.devhelp
   /usr/share/gtk-doc/html/libsoup-2.4/libsoup-2.4.devhelp2
   /usr/share/gtk-doc/html/libsoup-2.4/libsoup-24-GValue-Support.html
+  /usr/share/gtk-doc/html/libsoup-2.4/libsoup-24-HTML-Form-Support.html
   /usr/share/gtk-doc/html/libsoup-2.4/libsoup-24-Soup-Miscellaneous-Utilities.html
   /usr/share/gtk-doc/html/libsoup-2.4/libsoup-24-SoupCookie.html
   /usr/share/gtk-doc/html/libsoup-2.4/libsoup-24-SoupMessageBody.html
   /usr/share/gtk-doc/html/libsoup-2.4/libsoup-24-SoupMessageHeaders.html
+  /usr/share/gtk-doc/html/libsoup-2.4/libsoup-24-SoupMultipart.html
   /usr/share/gtk-doc/html/libsoup-2.4/libsoup-24-SoupURI.html
   /usr/share/gtk-doc/html/libsoup-2.4/libsoup-24-XMLRPC-Support.html
+  /usr/share/gtk-doc/html/libsoup-2.4/libsoup-24-soup-gnome-features.html
   /usr/share/gtk-doc/html/libsoup-2.4/libsoup-24-soup-method.html
   /usr/share/gtk-doc/html/libsoup-2.4/libsoup-24-soup-status.html
+  /usr/share/gtk-doc/html/libsoup-2.4/libsoup-build-howto.html
   /usr/share/gtk-doc/html/libsoup-2.4/libsoup-client-howto.html
   /usr/share/gtk-doc/html/libsoup-2.4/libsoup-porting-2.2-2.4.html
   /usr/share/gtk-doc/html/libsoup-2.4/libsoup-server-howto.html
@@ -141,14 +165,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 2.24.3-1 -----
-Version bump.
-
------ version 2.24.2.1-1 -----
-Version bump for GNOME 2.24.
-
------ version 2.4.1-1 -----
-Initial release of 2.4 branch for Cygwin.
+----- version 2.26.0-1 -----
+Initial release of GNOME 2.26 for Cygwin 1.7.
 
 
 Cygwin port maintained by:
