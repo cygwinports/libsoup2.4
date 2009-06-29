@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin libsoup2.4_1 libgconf2-devel libglib2.0-devel libgcrypt-devel gnutls-devel libproxy-devel libsqlite3-devel libxml2-devel
+requires: libsoup2.4_1 libgconf2-devel libglib2.0-devel libgcrypt-devel gnutls-devel libproxy-devel libsqlite3-devel libxml2-devel
 external-source: libsoup2.4
 sdesc: "GNOME HTTP library (development)"
 ldesc: "Soup is an HTTP library implementation in C. It was originally 
