@@ -11,11 +11,11 @@ fashion, very similar to the Gtk+ programming model (a synchronous
 operation mode is also supported for those who want it).
 
 Runtime requirements:
-  cygwin-1.7.0-48
+  cygwin-1.7.0-50
   libgcc1-4.3.2-2
   libgconf2_4-2.26.2-1
   libgcrypt11-1.4.1-1
-  libglib2.0_0-2.20.3-1
+  libglib2.0_0-2.20.4-1
   libgnutls26-2.4.1-1
   libproxy0-0.2.3-1
   libsqlite3_0-3.6.11-1
@@ -26,12 +26,12 @@ Build requirements:
   autoconf2.5-2.63-10
   automake1.10-1.10.2-10
   binutils-20080624-2
-  cygport-0.9.6-1
+  cygport-0.9.7-1
   gawk-3.1.6-2
   gcc4-core-4.3.2-2
   gnome-common-2.26.0-2
   gtk-doc-1.11-2
-  libtool-2.2.7a-12
+  libtool-2.2.7a-13
   make-3.81-2
   pkg-config-0.23b-10
   sed-4.1.5-2
@@ -45,16 +45,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack libsoup2.4-2.26.2-X-src.tar.bz2
+  unpack libsoup2.4-2.26.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./libsoup2.4-2.26.2-X.cygport all
+  cygport ./libsoup2.4-2.26.3-X.cygport all
 
 This will create:
-  /usr/src/libsoup2.4-2.26.2-X-src.tar.bz2
-  /usr/src/libsoup2.4-devel-2.26.2-X.tar.bz2
-  /usr/src/libsoup2.4_1-2.26.2-X.tar.bz2
+  /usr/src/libsoup2.4-2.26.3-X-src.tar.bz2
+  /usr/src/libsoup2.4-devel-2.26.3-X.tar.bz2
+  /usr/src/libsoup2.4_1-2.26.3-X.tar.bz2
 
 -------------------------------------------
 
@@ -91,6 +91,7 @@ Files included in the binary packages:
   /usr/include/libsoup-2.4/libsoup/soup-multipart.h
   /usr/include/libsoup-2.4/libsoup/soup-portability.h
   /usr/include/libsoup-2.4/libsoup/soup-proxy-resolver.h
+  /usr/include/libsoup-2.4/libsoup/soup-proxy-uri-resolver.h
   /usr/include/libsoup-2.4/libsoup/soup-server.h
   /usr/include/libsoup-2.4/libsoup/soup-session-async.h
   /usr/include/libsoup-2.4/libsoup/soup-session-feature.h
@@ -123,6 +124,7 @@ Files included in the binary packages:
   /usr/share/gtk-doc/html/libsoup-2.4/SoupLogger.html
   /usr/share/gtk-doc/html/libsoup-2.4/SoupMessage.html
   /usr/share/gtk-doc/html/libsoup-2.4/SoupProxyResolver.html
+  /usr/share/gtk-doc/html/libsoup-2.4/SoupProxyURIResolver.html
   /usr/share/gtk-doc/html/libsoup-2.4/SoupServer.html
   /usr/share/gtk-doc/html/libsoup-2.4/SoupSession.html
   /usr/share/gtk-doc/html/libsoup-2.4/SoupSessionAsync.html
@@ -164,6 +166,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 2.26.3-1 -----
+Version bump.
 
 ----- version 2.26.2-1 -----
 Version bump.
