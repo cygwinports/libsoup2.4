@@ -1,0 +1,15 @@
+ORIG_PN=libsoup
+
+inherit gnome2
+
+DESCRIPTION="GNOME HTTP client/server library"
+
+PKG_NAMES="${PN} libsoup2.4_1 libsoup2.4-devel libsoup-gnome2.4_1 libsoup-gnome2.4-devel"
+libsoup2_4_1_CONTENTS="usr/bin/cygsoup-2.4-1.dll usr/share/doc/"
+libsoup2_4_devel_CONTENTS="usr/include/libsoup-2.4/ usr/lib/libsoup-2.4.*
+                           usr/lib/pkgconfig/libsoup-2.4.pc usr/share/gtk-doc/"
+libsoup_gnome2_4_1_CONTENTS="usr/bin/cygsoup-gnome-2.4-1.dll"
+libsoup_gnome2_4_devel_CONTENTS="usr/include/libsoup-gnome-2.4/ usr/lib/libsoup-gnome-2.4.*
+                           usr/lib/pkgconfig/libsoup-gnome-2.4.pc"
+
+CYGCONF_ARGS="--enable-ssl"
