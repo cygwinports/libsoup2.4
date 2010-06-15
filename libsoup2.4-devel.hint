@@ -1,5 +1,5 @@
 category: Gnome
-requires: libsoup2.4_1 libglib2.0-devel libgcrypt-devel gnutls-devel libxml2-devel
+requires: libsoup2.4_1 libglib2.0-devel libgcrypt-devel gnutls-devel libxml2-devel zlib-devel
 external-source: libsoup2.4
 sdesc: "GObject HTTP library (development)"
 ldesc: "Soup is an HTTP library implementation in C. It was originally 
