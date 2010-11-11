@@ -1,7 +1,7 @@
 category: Gnome
-requires: libgcrypt11 libglib2.0_0 libgnutls26 libxml2 zlib0
+requires: girepository-GLib2.0 girepository-Soup2.4 libsoup-gnome2.4_1
 external-source: libsoup2.4
-sdesc: "GObject HTTP library (runtime)"
+sdesc: "GNOME HTTP library (GObject Introspection data)"
 ldesc: "Soup is an HTTP library implementation in C. It was originally 
 part of a SOAP (Simple Object Access Protocol) implementation, but the 
 SOAP code was later removed (and then later partially reimplemented...)
