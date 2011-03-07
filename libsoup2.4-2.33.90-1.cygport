@@ -15,4 +15,4 @@ libsoup_gnome2_4_devel_CONTENTS="usr/include/libsoup-gnome-2.4/ usr/lib/libsoup-
 girepository_Soup2_4_CONTENTS="usr/*/gir*/Soup-2.4.*"
 girepository_SoupGNOME2_4_CONTENTS="usr/*/gir*/SoupGNOME-2.4.*"
 
-CYGCONF_ARGS="--enable-ssl"
+CYGCONF_ARGS="--disable-tls-check"
