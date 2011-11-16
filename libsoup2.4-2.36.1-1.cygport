@@ -4,6 +4,12 @@ inherit gnome2
 
 DESCRIPTION="GNOME HTTP client/server library"
 
+DEPEND="gnome-common gtk-doc
+	girepository(GLib-2.0)
+	pkgconfig(gnome-keyring-1)
+	pkgconfig(libxml-2.0)
+	pkgconfig(sqlite3)"
+
 PKG_NAMES="libsoup2.4_1 libsoup2.4-devel libsoup-gnome2.4_1 libsoup-gnome2.4-devel
            girepository-Soup2.4 girepository-SoupGNOME2.4"
 libsoup2_4_1_CONTENTS="usr/bin/cygsoup-2.4-1.dll usr/share/doc/"
