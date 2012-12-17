@@ -1,8 +1,19 @@
 ORIG_PN=libsoup
-
 inherit gnome2
 
-DESCRIPTION="GNOME HTTP client/server library"
+NAME="libsoup2.4"
+VERSION=2.40.2
+RELEASE=1
+CATEGORY="GNOME"
+SUMMARY="GNOME HTTP library"
+DESCRIPTION="Soup is an HTTP library implementation in C. It was originally
+part of a SOAP (Simple Object Access Protocol) implementation, but the SOAP
+code was later removed (and then later partially reimplemented...) Soup uses
+GObjects and the glib main loop, and is designed to work well with Gtk/GNOME
+applications. This enables GNOME applications to access HTTP servers on the
+network in a completely asynchronous fashion, very similar to the Gtk+
+programming model (a synchronous operation mode is also supported for those
+who want it)."
 
 DEPEND="gnome-common gtk-doc
 	girepository(GLib-2.0)
@@ -12,7 +23,8 @@ DEPEND="gnome-common gtk-doc
 
 PKG_NAMES="libsoup2.4_1 libsoup2.4-devel libsoup-gnome2.4_1 libsoup-gnome2.4-devel
            girepository-Soup2.4 girepository-SoupGNOME2.4"
-libsoup2_4_1_CONTENTS="usr/bin/cygsoup-2.4-1.dll usr/share/doc/"
+libsoup2_4_1_REQUIRES="glib2.0-networking"
+libsoup2_4_1_CONTENTS="usr/bin/cygsoup-2.4-1.dll usr/share/doc/ usr/share/locale/"
 libsoup2_4_devel_CONTENTS="usr/include/libsoup-2.4/ usr/lib/libsoup-2.4.*
                            usr/lib/pkgconfig/libsoup-2.4.pc usr/share/gtk-doc/"
 libsoup_gnome2_4_1_CONTENTS="usr/bin/cygsoup-gnome-2.4-1.dll"
