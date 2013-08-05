@@ -2,9 +2,9 @@ ORIG_PN=libsoup
 inherit gnome2
 
 NAME="libsoup2.4"
-VERSION=2.40.3
+VERSION=2.42.2
 RELEASE=1
-CATEGORY="GNOME"
+CATEGORY="Libs"
 SUMMARY="GNOME HTTP library"
 DESCRIPTION="Soup is an HTTP library implementation in C. It was originally
 part of a SOAP (Simple Object Access Protocol) implementation, but the SOAP
