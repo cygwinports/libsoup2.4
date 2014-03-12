@@ -2,7 +2,7 @@ ORIG_PN=libsoup
 inherit gnome2
 
 NAME="libsoup2.4"
-VERSION=2.42.3.1
+VERSION=2.44.2
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME HTTP library"
@@ -21,12 +21,15 @@ DEPEND="gnome-common gtk-doc
 	pkgconfig(libxml-2.0)
 	pkgconfig(sqlite3)"
 
-PKG_NAMES="libsoup2.4_1 libsoup2.4-devel libsoup-gnome2.4_1 libsoup-gnome2.4-devel
+PKG_NAMES="libsoup2.4_1 libsoup2.4-devel libsoup2.4-doc
+           libsoup-gnome2.4_1 libsoup-gnome2.4-devel
            girepository-Soup2.4 girepository-SoupGNOME2.4"
 libsoup2_4_1_REQUIRES="glib2.0-networking"
 libsoup2_4_1_CONTENTS="usr/bin/cygsoup-2.4-1.dll usr/share/doc/ usr/share/locale/"
 libsoup2_4_devel_CONTENTS="usr/include/libsoup-2.4/ usr/lib/libsoup-2.4.*
-                           usr/lib/pkgconfig/libsoup-2.4.pc usr/share/gtk-doc/"
+                           usr/lib/pkgconfig/libsoup-2.4.pc"
+libsoup2_4_doc_CATEGORY="Doc"
+libsoup2_4_doc_CONTENTS="usr/share/gtk-doc/"
 libsoup_gnome2_4_1_CONTENTS="usr/bin/cygsoup-gnome-2.4-1.dll"
 libsoup_gnome2_4_devel_CONTENTS="usr/include/libsoup-gnome-2.4/ usr/lib/libsoup-gnome-2.4.*
                            usr/lib/pkgconfig/libsoup-gnome-2.4.pc"
