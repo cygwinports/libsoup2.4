@@ -3,7 +3,7 @@ inherit gnome2
 
 NAME="libsoup2.4"
 VERSION=2.44.2
-RELEASE=1
+RELEASE=2
 CATEGORY="Libs"
 SUMMARY="GNOME HTTP library"
 DESCRIPTION="Soup is an HTTP library implementation in C. It was originally
@@ -14,6 +14,8 @@ applications. This enables GNOME applications to access HTTP servers on the
 network in a completely asynchronous fashion, very similar to the Gtk+
 programming model (a synchronous operation mode is also supported for those
 who want it)."
+
+PATCH_URI="2.44.2-file-uri.patch"
 
 DEPEND="gnome-common gtk-doc
 	girepository(GLib-2.0)

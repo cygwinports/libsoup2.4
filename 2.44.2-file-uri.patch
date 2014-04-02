@@ -1,0 +1,15 @@
+--- origsrc/libsoup-2.44.2/libsoup/soup-uri.c	2013-11-11 09:02:00.000000000 -0600
++++ src/libsoup-2.44.2/libsoup/soup-uri.c	2014-04-02 10:58:13.262360300 -0500
+@@ -282,6 +282,12 @@ soup_uri_new_with_base (SoupURI *base, c
+ 		return uri;
+         }
+ 
++	/* handle extra leading slashes */
++	if (uri->scheme == SOUP_URI_SCHEME_FILE
++	    && strncmp (uri_string, "////", 4) == 0
++	    && uri_string[4] != '/')
++		uri_string += 1;
++
+ 	/* Check for authority */
+ 	if (strncmp (uri_string, "//", 2) == 0) {
+ 		uri_string += 2;
