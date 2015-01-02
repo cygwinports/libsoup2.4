@@ -2,8 +2,8 @@ ORIG_PN=libsoup
 inherit gnome2
 
 NAME="libsoup2.4"
-VERSION=2.44.2
-RELEASE=2
+VERSION=2.48.1
+RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME HTTP library"
 DESCRIPTION="Soup is an HTTP library implementation in C. It was originally
@@ -19,7 +19,6 @@ PATCH_URI="2.44.2-file-uri.patch"
 
 DEPEND="gnome-common gtk-doc
 	girepository(GLib-2.0)
-	pkgconfig(gnome-keyring-1)
 	pkgconfig(libxml-2.0)
 	pkgconfig(sqlite3)"
 
