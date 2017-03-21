@@ -2,7 +2,7 @@ ORIG_PN=libsoup
 inherit gnome2
 
 NAME="libsoup2.4"
-VERSION=2.52.2
+VERSION=2.56.0
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME HTTP library"
@@ -15,7 +15,11 @@ network in a completely asynchronous fashion, very similar to the Gtk+
 programming model (a synchronous operation mode is also supported for those
 who want it)."
 
-PATCH_URI="2.44.2-file-uri.patch"
+PATCH_URI="
+	2.44.2-file-uri.patch
+	2.56.0-dllexport.patch
+	2.56.0-system-psl.patch
+"
 
 DEPEND="gnome-common gtk-doc
 	girepository(GLib-2.0)

@@ -1,0 +1,11 @@
+--- origsrc/libsoup-2.56.0/libsoup/Makefile.am	2016-09-19 10:09:17.000000000 -0500
++++ src/libsoup-2.56.0/libsoup/Makefile.am	2017-03-05 14:31:26.053905400 -0600
+@@ -212,7 +212,7 @@ libsoup_2_4_la_SOURCES =		\
+ # TLD rules
+ EXTRA_DIST += tld-parser.py
+ 
+-TLD_DATA_FILE=$(top_srcdir)/data/effective_tld_names.dat
++TLD_DATA_FILE=/usr/share/publicsuffix/effective_tld_names.dat
+ 
+ tld_data.inc: tld-parser.py $(TLD_DATA_FILE)
+ 	$(srcdir)/tld-parser.py $(TLD_DATA_FILE) tld_data.inc

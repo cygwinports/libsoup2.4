@@ -1,0 +1,11 @@
+--- origsrc/libsoup-2.56.0/libsoup/soup-version.h.in	2016-09-16 10:14:27.000000000 -0500
++++ src/libsoup-2.56.0/libsoup/soup-version.h.in	2017-03-05 14:33:09.177949000 -0600
+@@ -30,7 +30,7 @@
+  * properly get exported in Windows DLLs.
+  */
+ #ifndef SOUP_VAR
+-#  ifdef G_PLATFORM_WIN32
++#  ifdef G_OS_WIN32
+ #    ifdef LIBSOUP_COMPILATION
+ #      ifdef DLL_EXPORT
+ #        define SOUP_VAR __declspec(dllexport)
