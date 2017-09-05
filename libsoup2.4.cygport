@@ -2,7 +2,7 @@ ORIG_PN=libsoup
 inherit gnome2
 
 NAME="libsoup2.4"
-VERSION=2.56.0
+VERSION=2.58.2
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME HTTP library"
